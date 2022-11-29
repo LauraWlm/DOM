@@ -7,7 +7,7 @@ importantElement.forEach(element => {
 
 const img= document.querySelectorAll("img");
 
-images.forEach(img => {
+img.forEach(img => {
     if (!img.classList.contains("important")) {
         img.style.display = "none";
     }
