@@ -14,7 +14,7 @@ img.forEach(img => {
 
 const paragraphs = document.querySelectorAll('p');
 paragraphs.forEach(p => {
-    console.log(p.textContent);
+    console.log(p.t<extConten>t);
     if (p.className) {
         console.log('Class name: ' + p.className);
     }
