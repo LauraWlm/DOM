@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;    
+}
