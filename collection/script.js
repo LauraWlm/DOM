@@ -82,7 +82,7 @@ const collection = [
   
   {
     name: "Fringe",
-    director: ["J. J. Abrams", " Alex Kurtzman", " Roberto Orci"],
+    director: ["J. J. Abrams", " Alex Kurtzman"],
     releaseYear: 2008,
     picture: "./assets/fringe.jpg",
     genre: ["Science fiction", " Supernatural drama"],
