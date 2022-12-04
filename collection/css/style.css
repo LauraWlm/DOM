@@ -1,3 +1,19 @@
+@-webkit-keyframes scale-animation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-animation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +21,109 @@
 
 body {
   width: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15%;
+  border-radius: 5vw;
+  width: 60vw;
+  height: 80vw;
+  color: rgb(255, 255, 255);
+}
+section .Dahmer {
+  background-color: rgba(46, 39, 27, 0.5);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(166, 114, 23, 0.472);
+}
+section .Hannibal {
+  background-color: rgba(17, 25, 61, 0.5);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(45, 64, 107, 0.616);
+}
+section .AHS {
+  background-color: rgba(20, 28, 9, 0.7);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(64, 65, 50, 0.616);
+}
+section .Wednesday {
+  background-color: rgba(8, 21, 102, 0.5);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(94, 91, 129, 0.616);
+}
+section .Mentalist {
+  background-color: rgba(0, 64, 17, 0.5);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(132, 150, 152, 0.453);
+}
+section .Sherlock {
+  background-color: rgba(5, 24, 31, 0.7);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(50, 66, 75, 0.616);
+}
+section .Dexter {
+  background-color: rgba(175, 16, 21, 0.3);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(118, 70, 64, 0.568);
+}
+section .House {
+  background-color: rgba(36, 38, 41, 0.7);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(75, 75, 78, 0.616);
+}
+section .Criminalminds {
+  background-color: rgba(8, 23, 52, 0.7);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(45, 64, 107, 0.616);
+}
+section .Fringe {
+  background-color: rgba(57, 120, 142, 0.3);
+  box-shadow: -1vw 1vw 4vw 0.8vw rgba(55, 78, 71, 0.635);
+}
+section img {
+  width: 42vw;
+  height: 25vw;
+  border-radius: 2vw;
+  margin: 5%;
+  -webkit-animation: scale-animation 1s;
+          animation: scale-animation 1s;
+}
+section img:hover img {
+  transform: scale(0.5);
+  transition: 3s;
+}
+section h2, section h3, section h4, section h5, section q {
+  margin-top: 5%;
+  cursor: text;
+}
+section h2 {
+  display: none;
+}
+section h3 {
+  font-size: 3vw;
+}
+section h4 {
+  font-size: 2.5vw;
+}
+section h5 {
+  text-shadow: rgb(255, 255, 255) 0.1vw 0vw 2vw;
+  font-size: 2.3vw;
+}
+section q {
+  text-align: center;
+  width: 50vw;
+  font-size: 2vw;
+  line-height: 2.8vw;
+}
+
+h1 {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  margin: 3%;
 }/*# sourceMappingURL=style.css.map */
