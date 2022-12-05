@@ -49,7 +49,7 @@ section article {
 }
 section article:hover {
   transform: scale(0.5);
-  transition: 3s;
+  transition: 1s;
 }
 section .Dahmer {
   background-color: rgba(46, 39, 27, 0.5);
