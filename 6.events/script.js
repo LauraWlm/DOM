@@ -5,21 +5,25 @@ const getElapsedTime = () => {
 }
 
 const clickOnSquare = (e) => {  
+  section=document.getElementsByTagName('section')[0];//add new code for new square
+  let div=document.createElement('div');
+  div.classList.add("displayedsquare", e.target.classList[1]);
+  section.appendChild(div);//end new code
   console.log(e.target.classList[1])
   console.log(getElapsedTime())
 }
 
 const actionSquares = document.querySelectorAll('.actionsquare')
-for (let actionSquare of actionSquares) {
-  actionSquare.addEventListener('click', clickOnSquare)
-}
-
-
-e.createElement(div),
 function displayAnAlert(){
   return alert('The button shall not be pressed!')
 }
-e.addEventListener(
-'click', // we listen to the click event
-displayAnAlert // We trigger the callback function
-)
+
+for (let actionSquare of actionSquares) {
+  actionSquare.addEventListener('click', clickOnSquare,  displayAnAlert)
+}
+
+
+// Put the logs 
+let liFirst = document.createElement('li');
+liFirst.innerHTML = 'prepend';
+ol.prepend(liFirst);
